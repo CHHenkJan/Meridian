@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Methodology — Meridian</title>
+  <meta name="description" content="Meridian's triple confirmation swing entry: EMA pullback, MACD histogram, and trend bias alignment on daily crypto timeframes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="16" stroke="#e8943a" stroke-width="2"/>
+          <line x1="18" y1="2" x2="18" y2="34" stroke="#e8943a" stroke-width="1.5"/>
+          <line x1="2" y1="18" x2="34" y2="18" stroke="#e8943a" stroke-width="1.5"/>
+          <circle cx="18" cy="18" r="3" fill="#e8943a"/>
+        </svg>
+        Meridian
+      </a>
+      <ul class="nav__links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="methodology.html">Methodology</a></li>
+        <li><a href="track-record.html">Track Record</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="indicators.html">Indicators</a></li>
+        <li><a href="products.html" class="nav__cta">View Products</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <span class="section-header__tag">The Method</span>
+      <h1>Triple Confirmation Swing Entry</h1>
+      <p>How Meridian finds, enters, and manages swing trades on daily crypto timeframes.</p>
+    </div>
+  </div>
+
+  <!-- Philosophy -->
+  <section class="section">
+    <div class="container">
+      <div class="content-block">
+        <h2>The Philosophy</h2>
+        <p>
+          Scalping requires constant screen time. Long-term investing requires patience
+          that most people simply don't have. Swing trading sits in the middle —
+          and that's exactly where Meridian operates.
+        </p>
+        <p>
+          Daily timeframes mean you check your positions once a day.
+          Multi-day holds mean fees don't eat your returns.
+          Trend confirmation means you're not fighting the market.
+        </p>
+        <p>
+          It's the approach that professional systematic traders have used for decades —
+          now accessible to anyone with a Cryptohopper account.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Three Steps -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-header__tag">Entry Rules</span>
+        <h2>Three signals must align before Meridian acts.</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step__number">1</div>
+          <div class="step__content">
+            <h3>Trend Bias — EMA(5) / EMA(15)</h3>
+            <p>
+              EMA(5) must be above EMA(15) on the daily chart. Short-term momentum must be bullish. No exceptions.
+              This filter keeps Meridian out of bearish or sideways markets where pullback entries fail most often.
+            </p>
+            <div class="step__detail">if EMA(5) &gt; EMA(15) → trend = bullish → proceed to step 2</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__number">2</div>
+          <div class="step__content">
+            <h3>Pullback Entry — EMA(21)</h3>
+            <p>
+              Price must pull back to and bounce from the EMA(21). We don't chase — we wait for the market
+              to come to us. The EMA(21) is one of the most widely followed moving averages among professional
+              swing traders, acting as dynamic support in trending markets.
+            </p>
+            <div class="step__detail">price touches EMA(21) + bounce confirmed → entry zone active</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__number">3</div>
+          <div class="step__content">
+            <h3>MACD Confirmation — Histogram Recovery</h3>
+            <p>
+              The MACD histogram must be recovering (turning positive). Momentum must be returning, not fading.
+              This third confirmation prevents entering during prolonged pullbacks that turn into trend reversals.
+            </p>
+            <div class="step__detail">MACD histogram &gt; previous bar → momentum recovery confirmed → BUY</div>
+          </div>
+        </div>
+        <div class="step step--result">
+          <div class="step__number">&check;</div>
+          <div class="step__content">
+            <h3>All Three Align: Meridian Buys</h3>
+            <p>When any one is absent: Meridian waits. Patience is a feature, not a bug.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exit Rules -->
+  <section class="section">
+    <div class="container">
+      <div class="content-block">
+        <h2>Exit Methodology</h2>
+        <p>
+          Entries get the attention, but exits determine profitability. Meridian uses a dual-exit system
+          designed to protect capital while allowing winners to develop.
+        </p>
+
+        <h3>ATR-Based Trailing Stop</h3>
+        <p>
+          Every position is protected by a trailing stop set at 1.5&times; ATR (Average True Range).
+          This dynamically adapts to market volatility — tighter stops in quiet markets, wider stops
+          when volatility is elevated. The stop locks in gains as positions move in your favor.
+        </p>
+
+        <h3>Signal-Based Exit</h3>
+        <p>
+          Sell signals trigger on MACD bearish divergence or EMA breakdown (EMA(5) crossing below EMA(15)).
+          When the trend bias flips, Meridian exits regardless of profit level.
+        </p>
+
+        <h3>Take Profit Targets</h3>
+        <p>
+          Take profit is set at 8–20% depending on current market volatility (measured by ATR).
+          Higher volatility = wider targets. Lower volatility = tighter, more conservative exits.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Risk Management -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="content-block">
+        <h2>Risk Management</h2>
+        <p>
+          Meridian caps risk at 1.5% per position. Maximum 8 concurrent positions using risk parity
+          position sizing — meaning each position contributes equally to portfolio risk regardless
+          of the asset's volatility.
+        </p>
+        <p>
+          Combined with ATR-based stops and the triple confirmation entry, this creates a system
+          that can sustain losing streaks without significant drawdown.
+        </p>
+
+        <h3>Key Parameters</h3>
+        <ul>
+          <li>Max risk per trade: 1.5%</li>
+          <li>Max concurrent positions: 8</li>
+          <li>Trailing stop: 1.5&times; ATR</li>
+          <li>Take profit: 8–20% (volatility-adjusted)</li>
+          <li>Typical hold time: 2–7 days</li>
+          <li>Trades per month: 20–40</li>
+          <li>Universe: Top-cap crypto pairs</li>
+        </ul>
+
+        <div class="disclaimer-block" style="margin-top: 32px;">
+          <p>
+            <span class="disclaimer-icon">&#9888;</span>
+            All parameters describe Meridian's paper trading configuration. Swing trading crypto carries
+            significant risk of loss. Past performance does not guarantee future results. Not financial advice.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sideways Markets -->
+  <section class="section">
+    <div class="container">
+      <div class="content-block">
+        <h2>When Meridian Waits</h2>
+        <p>
+          Momentum swing strategies perform best during trending markets. During sideways,
+          range-bound conditions, Meridian reduces signal frequency naturally — the triple
+          confirmation filter prevents most false entries.
+        </p>
+        <p>
+          This means some months will have fewer trades. That's by design. Not trading is
+          sometimes the best trade.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom" style="border-top: none; padding-top: 0;">
+        <p class="footer__legal">
+          &copy; 2026 Meridian Signals. All signals and strategies are based on paper trading
+          and are for informational purposes only. Not financial advice. Crypto trading
+          involves risk of loss. Past performance is not indicative of future results.
+          Dutch law: no leveraged token signals.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Disclaimer Modal -->
+  <div class="modal-overlay" id="disclaimerModal">
+    <div class="modal">
+      <div class="modal__icon">&#9888;</div>
+      <h2>Important Notice</h2>
+      <p>
+        This website provides information about Meridian's paper trading activities
+        on Cryptohopper. All results shown are from paper trading — no real capital
+        is involved.<br><br>
+        Nothing on this website constitutes financial advice. Cryptocurrency trading
+        involves substantial risk. You may lose all invested capital. Past performance
+        does not guarantee future results.<br><br>
+        By continuing to use this site, you acknowledge that you have read and
+        understood this disclaimer.
+      </p>
+      <button class="btn btn--primary" id="acceptDisclaimer">I Understand — Continue</button>
+    </div>
+  </div>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <p>We use analytics cookies to improve your experience. We do not sell your data.</p>
+    <div class="cookie-banner__actions">
+      <button class="btn btn--primary btn--small" id="acceptCookies">Accept</button>
+      <button class="btn btn--secondary btn--small" id="manageCookies">Manage Preferences</button>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

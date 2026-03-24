@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indicators — Meridian</title>
+  <meta name="description" content="Educational guide to the indicators behind Meridian's signals: EMA, MACD, and ATR explained.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="16" stroke="#e8943a" stroke-width="2"/>
+          <line x1="18" y1="2" x2="18" y2="34" stroke="#e8943a" stroke-width="1.5"/>
+          <line x1="2" y1="18" x2="34" y2="18" stroke="#e8943a" stroke-width="1.5"/>
+          <circle cx="18" cy="18" r="3" fill="#e8943a"/>
+        </svg>
+        Meridian
+      </a>
+      <ul class="nav__links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="methodology.html">Methodology</a></li>
+        <li><a href="track-record.html">Track Record</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="indicators.html">Indicators</a></li>
+        <li><a href="products.html" class="nav__cta">View Products</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <span class="section-header__tag">Education</span>
+      <h1>Understanding the Indicators Behind Meridian's Signals</h1>
+      <p>A plain-language guide to the three technical indicators that power Meridian's methodology.</p>
+    </div>
+  </div>
+
+  <!-- EMA(21) -->
+  <section class="section">
+    <div class="container">
+      <div class="content-block">
+        <div class="indicator-card">
+          <h3>The 21-Period Exponential Moving Average — EMA(21)</h3>
+          <p>
+            The EMA(21) is one of the most widely followed moving averages among professional
+            swing traders. Unlike the SMA (Simple Moving Average), it gives more weight to recent price action —
+            making it faster to respond to trend changes while still smoothing out noise.
+          </p>
+          <p>
+            Meridian uses the EMA(21) as its primary pullback target. In an established
+            uptrend, price repeatedly returns to the EMA(21) before continuing higher.
+            These bounces are the core entry mechanism.
+          </p>
+          <p>
+            Think of the EMA(21) as a "gravity line" that price orbits around. In a healthy uptrend,
+            the line slopes upward and price bounces off it like a ball bouncing off a rising floor.
+          </p>
+          <div class="note">
+            <strong>Important:</strong> The EMA(21) only functions as a valid entry when the broader trend
+            is confirmed (EMA5 &gt; EMA15). Using it in isolation, without trend context, leads
+            to false signals. This explanation is for educational purposes only. Not financial advice.
+          </div>
+        </div>
+
+        <div class="indicator-card">
+          <h3>EMA(5) / EMA(15) — Trend Direction Bias</h3>
+          <p>
+            The relationship between a fast EMA (5-period) and a slower EMA (15-period) reveals
+            the short-term trend direction. When the EMA(5) is above EMA(15), short-term momentum
+            is bullish. When below, momentum is bearish.
+          </p>
+          <p>
+            Meridian uses this crossover as a trend filter — the first of three confirmations required
+            before any trade is entered. This simple but effective filter prevents entries during
+            downtrends or sideways chop where pullback strategies tend to fail.
+          </p>
+          <p>
+            The EMA crossover is not a signal by itself. It's a context check. It answers the question:
+            "Is the short-term trend in our favor?" If yes, Meridian proceeds to check steps 2 and 3.
+            If no, Meridian waits.
+          </p>
+          <div class="note">
+            Moving average crossovers can produce false signals in choppy markets.
+            Meridian mitigates this by requiring two additional confirmations before acting.
+            This explanation is for educational purposes only. Not financial advice.
+          </div>
+        </div>
+
+        <div class="indicator-card">
+          <h3>MACD — Moving Average Convergence Divergence</h3>
+          <p>
+            The MACD is a momentum oscillator that shows the relationship between two moving averages.
+            It consists of the MACD line (difference between 12-period and 26-period EMA), a signal line
+            (9-period EMA of the MACD line), and a histogram (difference between the two).
+          </p>
+          <p>
+            Meridian specifically watches the MACD histogram. When the histogram is rising (bars getting
+            larger or turning from negative to positive), momentum is increasing. This is the third
+            and final confirmation required before entry.
+          </p>
+          <p>
+            On the exit side, MACD bearish divergence — where price makes a higher high but the MACD
+            makes a lower high — is one of Meridian's sell triggers. This divergence often precedes
+            trend reversals.
+          </p>
+          <div class="note">
+            The MACD is a lagging indicator by nature. It confirms momentum shifts after they begin,
+            not before. This is acceptable for swing trading where confirmation reduces false entries.
+            This explanation is for educational purposes only. Not financial advice.
+          </div>
+        </div>
+
+        <div class="indicator-card">
+          <h3>ATR — Average True Range</h3>
+          <p>
+            The ATR measures market volatility by calculating the average range between high and low
+            prices over a period (typically 14 days). It doesn't indicate direction — only how much
+            price is moving.
+          </p>
+          <p>
+            Meridian uses ATR in two critical ways:
+          </p>
+          <ul style="color: var(--text-secondary); padding-left: 20px; margin-bottom: 20px;">
+            <li style="margin-bottom: 8px;">
+              <strong>Trailing Stop:</strong> Set at 1.5&times; ATR below the highest price since entry.
+              In volatile markets, the stop is wider. In quiet markets, tighter. This prevents being
+              stopped out by normal price fluctuations while still protecting against real reversals.
+            </li>
+            <li style="margin-bottom: 8px;">
+              <strong>Take Profit:</strong> Adjusted between 8–20% based on current ATR levels.
+              Higher volatility allows for wider targets; lower volatility triggers earlier exits.
+            </li>
+          </ul>
+          <p>
+            ATR-based position management is widely used by professional systematic traders because
+            it adapts to market conditions automatically, removing the need for subjective judgment.
+          </p>
+          <div class="note">
+            ATR does not predict future volatility — it measures recent historical volatility.
+            Sudden market events can exceed ATR-based stop levels.
+            This explanation is for educational purposes only. Not financial advice.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How They Work Together -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="content-block" style="text-align: center;">
+        <h2>How They Work Together</h2>
+        <p style="max-width: 600px; margin: 0 auto 32px;">
+          No single indicator is reliable on its own. Meridian's edge comes from requiring
+          all three to agree before acting. This triple confirmation filter reduces false
+          entries significantly compared to single-indicator strategies.
+        </p>
+        <p>
+          <a href="methodology.html" class="btn btn--primary">Read the Full Methodology &rarr;</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom" style="border-top: none; padding-top: 0;">
+        <p class="footer__legal">
+          &copy; 2026 Meridian Signals. All content on this page is for educational purposes only.
+          Not financial advice. Crypto trading involves risk of loss.
+          Past performance is not indicative of future results. Dutch law: no leveraged token signals.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Disclaimer Modal -->
+  <div class="modal-overlay" id="disclaimerModal">
+    <div class="modal">
+      <div class="modal__icon">&#9888;</div>
+      <h2>Important Notice</h2>
+      <p>
+        This website provides information about Meridian's paper trading activities
+        on Cryptohopper. All results shown are from paper trading — no real capital
+        is involved.<br><br>
+        Nothing on this website constitutes financial advice. Cryptocurrency trading
+        involves substantial risk. You may lose all invested capital. Past performance
+        does not guarantee future results.<br><br>
+        By continuing to use this site, you acknowledge that you have read and
+        understood this disclaimer.
+      </p>
+      <button class="btn btn--primary" id="acceptDisclaimer">I Understand — Continue</button>
+    </div>
+  </div>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <p>We use analytics cookies to improve your experience. We do not sell your data.</p>
+    <div class="cookie-banner__actions">
+      <button class="btn btn--primary btn--small" id="acceptCookies">Accept</button>
+      <button class="btn btn--secondary btn--small" id="manageCookies">Manage Preferences</button>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
