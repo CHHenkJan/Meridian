@@ -5,9 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meridian — Momentum Swing Trading</title>
   <meta name="description" content="Systematic momentum swing trading on daily crypto timeframes. 20–40 signals per month. Balanced risk. Grounded in research, not gut feeling.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,300i,400,400i,500,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,11 +21,19 @@
   <nav class="nav">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">
-        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="18" cy="18" r="16" stroke="#e8943a" stroke-width="2"/>
-          <line x1="18" y1="2" x2="18" y2="34" stroke="#e8943a" stroke-width="1.5"/>
-          <line x1="2" y1="18" x2="34" y2="18" stroke="#e8943a" stroke-width="1.5"/>
-          <circle cx="18" cy="18" r="3" fill="#e8943a"/>
+        <svg class="logo-tile" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="meridianGradNav" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#e8943a"/>
+              <stop offset="100%" stop-color="#8a5a1a"/>
+            </linearGradient>
+          </defs>
+          <rect width="200" height="200" rx="44" fill="url(#meridianGradNav)"/>
+          <g transform="translate(100,100) scale(5.55) translate(-18,-18)">
+            <circle cx="18" cy="18" r="12" fill="none" stroke="#0c0a06" stroke-width="2"/>
+            <path d="M18 6v24M6 18h24" stroke="#0c0a06" stroke-width="1.5"/>
+            <circle cx="18" cy="18" r="4" fill="#0c0a06"/>
+          </g>
         </svg>
         Meridian
       </a>
@@ -42,21 +55,24 @@
   <section class="hero">
     <div class="container">
       <div class="hero__content">
-        <div class="hero__badge">Systematic Swing Trading</div>
-        <h1>
-          Find the Trend. Wait for the Pullback.<br>
-          <span class="highlight">Ride the Next Leg.</span>
-        </h1>
+        <div class="hero__eyebrow">
+          <span class="eyebrow">The Explorer</span>
+          <span class="dot"></span>
+          <span class="eyebrow eyebrow--plain">Momentum Swing</span>
+          <span class="dot"></span>
+          <span class="eyebrow eyebrow--plain">Moderate Risk</span>
+        </div>
+        <h1 class="hero__wordmark">Meridian</h1>
+        <p class="hero__tagline">Find the trend. Wait for the pullback. Ride the next leg.</p>
         <p class="hero__sub">
-          Meridian runs systematic momentum swing trading on daily crypto timeframes.
-          20–40 signals per month. Balanced risk. Grounded in research, not gut feeling.
+          Systematic momentum swing trading on daily crypto timeframes —
+          20 to 40 signals per month, balanced risk, grounded in research, not gut feeling.
           Verified paper trading track record on Cryptohopper.
         </p>
         <div class="hero__actions">
           <a href="pages/methodology.html" class="btn btn--primary">How Meridian Works &rarr;</a>
-          <a href="pages/products.html" class="btn btn--secondary">View Marketplace Products</a>
+          <a href="pages/products.html" class="btn btn--secondary">View Marketplace</a>
         </div>
-        <p class="hero__disclaimer">All results from paper trading only. Not financial advice.</p>
       </div>
     </div>
   </section>
@@ -65,7 +81,7 @@
   <section class="section section--dark">
     <div class="container">
       <div class="section-header">
-        <span class="section-header__tag">The Sweet Spot</span>
+        <span class="eyebrow">The Sweet Spot</span>
         <h2>Not too fast. Not too slow. Just right.</h2>
         <p>Swing trading sits between the extremes — and that's exactly where Meridian operates.</p>
       </div>
@@ -105,7 +121,7 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <span class="section-header__tag">The Method</span>
+        <span class="eyebrow">The Method</span>
         <h2>Three signals must align before Meridian acts.</h2>
       </div>
       <div class="steps">
@@ -149,7 +165,7 @@
     <div class="container">
       <div class="track-record">
         <div class="section-header">
-          <span class="section-header__tag">Transparency</span>
+          <span class="eyebrow">Transparency</span>
           <h2>Every trade. Every result. Always public.</h2>
           <p>
             Meridian's complete trading history is available on Cryptohopper's public dashboard.
@@ -178,7 +194,7 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <span class="section-header__tag">Marketplace</span>
+        <span class="eyebrow">Marketplace</span>
         <h2>Start with signals. Add strategy. Build a system.</h2>
       </div>
       <div class="products-grid">
@@ -191,7 +207,7 @@
             <span class="product-card__tag">Medium Risk</span>
             <span class="product-card__tag">Daily Timeframe</span>
           </div>
-          <a href="pages/products.html" class="btn btn--secondary btn--small">Learn More &rarr;</a>
+          <a href="https://www.cryptohopper.com/signaller?signaller_id=743" target="_blank" rel="noopener" class="btn btn--secondary btn--small">Learn More &rarr;</a>
         </div>
         <div class="product-card">
           <span class="product-card__type">Strategy</span>
@@ -202,31 +218,76 @@
             <span class="product-card__tag">Medium Risk</span>
             <span class="product-card__tag">Open Config</span>
           </div>
-          <a href="pages/products.html" class="btn btn--secondary btn--small">Learn More &rarr;</a>
+          <span class="btn btn--secondary btn--small btn--disabled">Coming Soon</span>
         </div>
         <div class="product-card">
           <span class="product-card__type">Template</span>
-          <h3>Meridian Complete Hopper Template</h3>
-          <p>Full swing-trading hopper configuration. Includes coin selection, ATR trailing stops, risk parity sizing, and take profit targets.</p>
+          <h3>Meridian Complete Bot Template</h3>
+          <p>Full swing-trading bot configuration. Includes coin selection, ATR trailing stops, risk parity sizing, and take profit targets.</p>
           <div class="product-card__meta">
             <span class="product-card__tag">Full Config</span>
-            <span class="product-card__tag">One-time</span>
+            <span class="product-card__tag">Free</span>
           </div>
-          <div class="product-card__price">$29 <span>one-time</span></div>
-          <a href="pages/products.html" class="btn btn--secondary btn--small">Learn More &rarr;</a>
+          <div class="product-card__price">Free</div>
+          <a href="https://www.cryptohopper.com/marketplace/search?q=Meridian&category%5B%5D=templates" target="_blank" rel="noopener" class="btn btn--secondary btn--small">Learn More &rarr;</a>
         </div>
         <div class="product-card">
           <span class="product-card__type">Copy Bot</span>
           <h3>Meridian Copy Bot — Ride the Wave</h3>
-          <p>Mirror Meridian's active paper trading hopper directly. Full transparency: open positions, P&amp;L, and trade rationale visible in real-time.</p>
+          <p>Mirror Meridian's active paper trading bot directly. Full transparency: open positions, P&amp;L, and trade rationale visible in real-time.</p>
           <div class="product-card__meta">
             <span class="product-card__tag">Mirror Trading</span>
             <span class="product-card__tag">Max 200 copiers</span>
             <span class="product-card__tag">7-day trial</span>
           </div>
           <div class="product-card__price">$49<span>/mo</span></div>
-          <a href="pages/products.html" class="btn btn--secondary btn--small">Learn More &rarr;</a>
+          <a href="https://www.cryptohopper.com/marketplace/search?q=Meridian&category%5B%5D=copytrading" target="_blank" rel="noopener" class="btn btn--secondary btn--small">Learn More &rarr;</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exchanges -->
+  <section class="exchanges">
+    <div class="container">
+      <span class="exchanges__label">Supported Exchanges</span>
+      <div class="exchanges__grid">
+        <a href="https://www.binance.com/en/register?ref=P6CD65KX" target="_blank" rel="noopener sponsored" title="Binance" class="exchanges__item">
+          <img src="images/exchanges/binance.svg" alt="Binance" loading="lazy">
+        </a>
+        <a href="https://www.binance.us/" target="_blank" rel="noopener" title="Binance US" class="exchanges__item">
+          <img src="images/exchanges/binance-us.svg" alt="Binance US" loading="lazy">
+        </a>
+        <a href="https://bingx.com/invite/AAAR94" target="_blank" rel="noopener sponsored" title="BingX" class="exchanges__item">
+          <img src="images/exchanges/bingx.svg" alt="BingX" loading="lazy">
+        </a>
+        <a href="https://bitvavo.com/en/affiliate/cryptohopper" target="_blank" rel="noopener sponsored" title="Bitvavo" class="exchanges__item">
+          <img src="images/exchanges/bitvavo.svg" alt="Bitvavo" loading="lazy">
+        </a>
+        <div class="exchanges__item" title="Bybit">
+          <img src="images/exchanges/bybit.svg" alt="Bybit" loading="lazy">
+        </div>
+        <a href="https://coinbase-consumer.sjv.io/anKdgR" target="_blank" rel="noopener sponsored" title="Coinbase" class="exchanges__item">
+          <img src="images/exchanges/coinbase.svg" alt="Coinbase" loading="lazy">
+        </a>
+        <a href="https://crypto.com/exch/4pv7m446qs" target="_blank" rel="noopener sponsored" title="Crypto.com" class="exchanges__item">
+          <img src="images/exchanges/crypto.com.svg" alt="Crypto.com" loading="lazy">
+        </a>
+        <a href="https://kraken.pxf.io/LXGyW0" target="_blank" rel="noopener sponsored" title="Kraken" class="exchanges__item">
+          <img src="images/exchanges/kraken.svg" alt="Kraken" loading="lazy">
+        </a>
+        <a href="https://www.kucoin.com/r/af/s7ywae" target="_blank" rel="noopener sponsored" title="KuCoin" class="exchanges__item">
+          <img src="images/exchanges/kucoin.svg" alt="KuCoin" loading="lazy">
+        </a>
+        <a href="https://www.okx.com/join/1850952" target="_blank" rel="noopener sponsored" title="OKX" class="exchanges__item">
+          <img src="images/exchanges/okx.svg" alt="OKX" loading="lazy">
+        </a>
+        <a href="https://www.bitmart.com/register-referral/en?r=VuEYv4" target="_blank" rel="noopener sponsored" title="BitMart" class="exchanges__item">
+          <span class="exchanges__wordmark">BitMart</span>
+        </a>
+        <a href="https://www.htx.co.zw/invite/en-us/1h?invite%5Fcode=9cqt3" target="_blank" rel="noopener sponsored" title="HTX" class="exchanges__item">
+          <span class="exchanges__wordmark">HTX</span>
+        </a>
       </div>
     </div>
   </section>
@@ -237,23 +298,28 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <a href="index.html" class="nav__logo">
-            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-              <circle cx="18" cy="18" r="16" stroke="#e8943a" stroke-width="2"/>
-              <line x1="18" y1="2" x2="18" y2="34" stroke="#e8943a" stroke-width="1.5"/>
-              <line x1="2" y1="18" x2="34" y2="18" stroke="#e8943a" stroke-width="1.5"/>
-              <circle cx="18" cy="18" r="3" fill="#e8943a"/>
+            <svg class="logo-tile" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="meridianGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#e8943a"/>
+                  <stop offset="100%" stop-color="#8a5a1a"/>
+                </linearGradient>
+              </defs>
+              <rect width="200" height="200" rx="44" fill="url(#meridianGradFooter)"/>
+              <g transform="translate(100,100) scale(5.55) translate(-18,-18)">
+                <circle cx="18" cy="18" r="12" fill="none" stroke="#0c0a06" stroke-width="2"/>
+                <path d="M18 6v24M6 18h24" stroke="#0c0a06" stroke-width="1.5"/>
+                <circle cx="18" cy="18" r="4" fill="#0c0a06"/>
+              </g>
             </svg>
             Meridian
           </a>
           <p>Momentum-driven swing trading on daily and weekly timeframes. Grounded in systematic momentum research.</p>
           <div class="footer__social">
-            <a href="https://twitter.com/MeridianSwing" aria-label="Twitter" target="_blank" rel="noopener">
+            <a href="https://x.com/MeridianAIBot" aria-label="X" target="_blank" rel="noopener">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
             </a>
-            <a href="https://facebook.com/MeridianSwingBot" aria-label="Facebook" target="_blank" rel="noopener">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>
-            <a href="https://t.me/MeridianSignals" aria-label="Telegram" target="_blank" rel="noopener">
+            <a href="https://t.me/meridiantheexplorer" aria-label="Telegram" target="_blank" rel="noopener">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
             </a>
           </div>
