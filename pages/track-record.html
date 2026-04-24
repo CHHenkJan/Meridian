@@ -5,9 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Track Record — Meridian</title>
   <meta name="description" content="Meridian's complete paper trading track record. Every trade, every result, always public.">
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="../images/favicon.png">
+  <link rel="apple-touch-icon" href="../images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,300i,400,400i,500,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -16,11 +21,19 @@
   <nav class="nav">
     <div class="nav__inner">
       <a href="../index.html" class="nav__logo">
-        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="18" cy="18" r="16" stroke="#e8943a" stroke-width="2"/>
-          <line x1="18" y1="2" x2="18" y2="34" stroke="#e8943a" stroke-width="1.5"/>
-          <line x1="2" y1="18" x2="34" y2="18" stroke="#e8943a" stroke-width="1.5"/>
-          <circle cx="18" cy="18" r="3" fill="#e8943a"/>
+        <svg class="logo-tile" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="meridianGradNav" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#e8943a"/>
+              <stop offset="100%" stop-color="#8a5a1a"/>
+            </linearGradient>
+          </defs>
+          <rect width="200" height="200" rx="44" fill="url(#meridianGradNav)"/>
+          <g transform="translate(100,100) scale(5.55) translate(-18,-18)">
+            <circle cx="18" cy="18" r="12" fill="none" stroke="#0c0a06" stroke-width="2"/>
+            <path d="M18 6v24M6 18h24" stroke="#0c0a06" stroke-width="1.5"/>
+            <circle cx="18" cy="18" r="4" fill="#0c0a06"/>
+          </g>
         </svg>
         Meridian
       </a>
@@ -41,7 +54,7 @@
   <!-- Page Header -->
   <div class="page-header">
     <div class="container">
-      <span class="section-header__tag">Transparency</span>
+      <span class="eyebrow">Transparency</span>
       <h1>Every Trade. Every Result. Always Public.</h1>
       <p>Meridian's complete paper trading history — not a curated selection.</p>
     </div>
@@ -86,7 +99,7 @@
   <section class="section section--dark">
     <div class="container">
       <div class="section-header">
-        <span class="section-header__tag">Sample Trades</span>
+        <span class="eyebrow">Sample Trades</span>
         <h2>Recent Paper Trade Log</h2>
         <p>Illustrative example of Meridian's trade activity. For the live, complete record, visit the Cryptohopper dashboard.</p>
       </div>
